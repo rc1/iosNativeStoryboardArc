@@ -14,11 +14,7 @@ ExampleOFApp::~ExampleOFApp () {
 void ExampleOFApp::setup() {
 	ofBackground(127);
     ofSetLogLevel(OF_LOG_VERBOSE);
-    
-    int fontSize = 8;
-    if (ofxiPhoneGetOFWindow()->isRetinaSupported())
-        fontSize *= 2;
-    
+
     ofLogVerbose() << "Size is " << ofGetWidth() << "x" << ofGetHeight();
 }
 
@@ -32,16 +28,13 @@ void ExampleOFApp::draw() {
     int x = ofGetWidth()  * 0.5;
     int y = ofGetHeight() * 0.5;
     int r = MIN(ofGetWidth(), ofGetHeight()) * 0.3;
-    int p = 0;
     
 	ofSetColor(ofColor::red);
     ofCircle(x, y, r);
     
-    x = ofGetWidth()  * 0.2;
-    y = ofGetHeight() * 0.11;
-    p = ofGetHeight() * 0.035;
-    
     ofSetColor(ofColor::white);
+    ofDrawBitmapString("hello world", ofPoint(x - 44.0f, y));
+
 }
 
 //--------------------------------------------------------------
