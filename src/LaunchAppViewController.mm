@@ -13,7 +13,7 @@
 - (IBAction)launchAppPressed:(id)sender {
     ExampleOFApp *exampleOFApp = new ExampleOFApp();
     CGRect frame = [[UIScreen mainScreen] bounds];
-    ExampleOFAppViewController *exampleOFAppViewController = [[[ExampleOFAppViewController alloc] initWithFrame:frame app:exampleOFApp] autorelease];
+    ExampleOFAppViewController *exampleOFAppViewController = [[ExampleOFAppViewController alloc] initWithFrame:frame app:exampleOFApp];
     [self.navigationController pushViewController:exampleOFAppViewController animated:YES];
 }
 
