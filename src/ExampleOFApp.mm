@@ -13,10 +13,13 @@ ExampleOFApp::~ExampleOFApp () {
 //--------------------------------------------------------------
 void ExampleOFApp::setup() {
 	ofBackground(127);
+    ofSetLogLevel(OF_LOG_VERBOSE);
     
     int fontSize = 8;
     if (ofxiPhoneGetOFWindow()->isRetinaSupported())
         fontSize *= 2;
+    
+    ofLogVerbose() << "Size is " << ofGetWidth() << "x" << ofGetHeight();
 }
 
 //--------------------------------------------------------------
