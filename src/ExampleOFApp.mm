@@ -1,33 +1,31 @@
-#include "CircleApp.h"
+#include "ExampleOFApp.h"
 
 //--------------------------------------------------------------
-CircleApp :: CircleApp () {
-    cout << "creating CircleApp" << endl;
+ExampleOFApp::ExampleOFApp () {
+    cout << "creating ExampleOFApp" << endl;
 }
 
 //--------------------------------------------------------------
-CircleApp :: ~CircleApp () {
-    cout << "destroying CircleApp" << endl;
+ExampleOFApp::~ExampleOFApp () {
+    cout << "destroying ExampleOFApp" << endl;
 }
 
 //--------------------------------------------------------------
-void CircleApp::setup() {
+void ExampleOFApp::setup() {
 	ofBackground(127);
     
     int fontSize = 8;
     if (ofxiPhoneGetOFWindow()->isRetinaSupported())
         fontSize *= 2;
-    
-    font.loadFont("fonts/mono0755.ttf", fontSize);
 }
 
 //--------------------------------------------------------------
-void CircleApp::update(){
+void ExampleOFApp::update(){
 
 }
 
 //--------------------------------------------------------------
-void CircleApp::draw() {
+void ExampleOFApp::draw() {
     int x = ofGetWidth()  * 0.5;
     int y = ofGetHeight() * 0.5;
     int r = MIN(ofGetWidth(), ofGetHeight()) * 0.3;
@@ -41,60 +39,56 @@ void CircleApp::draw() {
     p = ofGetHeight() * 0.035;
     
     ofSetColor(ofColor::white);
-    font.drawString("frame num      = " + ofToString(ofGetFrameNum() ),    x, y+=p);
-    font.drawString("frame rate     = " + ofToString(ofGetFrameRate() ),   x, y+=p);
-    font.drawString("screen width   = " + ofToString(ofGetWidth() ),       x, y+=p);
-    font.drawString("screen height  = " + ofToString(ofGetHeight() ),      x, y+=p);
 }
 
 //--------------------------------------------------------------
-void CircleApp::exit() {
+void ExampleOFApp::exit() {
     //
 }
 
 //--------------------------------------------------------------
-void CircleApp::touchDown(ofTouchEventArgs &touch){
+void ExampleOFApp::touchDown(ofTouchEventArgs &touch){
 
 }
 
 //--------------------------------------------------------------
-void CircleApp::touchMoved(ofTouchEventArgs &touch){
+void ExampleOFApp::touchMoved(ofTouchEventArgs &touch){
 
 }
 
 //--------------------------------------------------------------
-void CircleApp::touchUp(ofTouchEventArgs &touch){
+void ExampleOFApp::touchUp(ofTouchEventArgs &touch){
 
 }
 
 //--------------------------------------------------------------
-void CircleApp::touchDoubleTap(ofTouchEventArgs &touch){
+void ExampleOFApp::touchDoubleTap(ofTouchEventArgs &touch){
 
 }
 
 //--------------------------------------------------------------
-void CircleApp::lostFocus(){
+void ExampleOFApp::lostFocus(){
 
 }
 
 //--------------------------------------------------------------
-void CircleApp::gotFocus(){
+void ExampleOFApp::gotFocus(){
 
 }
 
 //--------------------------------------------------------------
-void CircleApp::gotMemoryWarning(){
+void ExampleOFApp::gotMemoryWarning(){
 
 }
 
 //--------------------------------------------------------------
-void CircleApp::deviceOrientationChanged(int newOrientation){
+void ExampleOFApp::deviceOrientationChanged(int newOrientation){
 
 }
 
 
 //--------------------------------------------------------------
-void CircleApp::touchCancelled(ofTouchEventArgs& args){
+void ExampleOFApp::touchCancelled(ofTouchEventArgs& args){
 
 }
 

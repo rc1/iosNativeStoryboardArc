@@ -13,9 +13,10 @@
 		5326AEA810A23A0500278DE6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5326AEA710A23A0500278DE6 /* CoreLocation.framework */; };
 		53F323EB10A20EDB00E0DAE4 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F323EA10A20EDB00E0DAE4 /* OpenAL.framework */; };
 		914F466616AC3E1C00786D52 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 914F466316AC3E1C00786D52 /* AppDelegate.mm */; };
-		914F466716AC3E1C00786D52 /* ExampleViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 914F466516AC3E1C00786D52 /* ExampleViewController.mm */; };
-		914F466C16AC3E2700786D52 /* CircleApp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 914F466916AC3E2700786D52 /* CircleApp.mm */; };
-		914F466D16AC3E2700786D52 /* CircleAppViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 914F466B16AC3E2700786D52 /* CircleAppViewController.mm */; };
+		914F466C16AC3E2700786D52 /* ExampleOFApp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 914F466916AC3E2700786D52 /* ExampleOFApp.mm */; };
+		914F466D16AC3E2700786D52 /* ExampleOFAppViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 914F466B16AC3E2700786D52 /* ExampleOFAppViewController.mm */; };
+		914F467716AC3FA900786D52 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 914F467616AC3FA900786D52 /* Storyboard.storyboard */; };
+		914F467A16AC417600786D52 /* LaunchAppViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 914F467916AC417600786D52 /* LaunchAppViewController.mm */; };
 		BB16EBD20F2B2A9500518274 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB16EBD10F2B2A9500518274 /* OpenGLES.framework */; };
 		BB16EBD90F2B2AB500518274 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB16EBD80F2B2AB500518274 /* QuartzCore.framework */; };
 		BB24DDCA10DA781C00E9C588 /* ofxiphone-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB24DDC910DA781C00E9C588 /* ofxiphone-Info.plist */; };
@@ -58,12 +59,13 @@
 		53F323EA10A20EDB00E0DAE4 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		914F466216AC3E1C00786D52 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		914F466316AC3E1C00786D52 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
-		914F466416AC3E1C00786D52 /* ExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleViewController.h; sourceTree = "<group>"; };
-		914F466516AC3E1C00786D52 /* ExampleViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ExampleViewController.mm; sourceTree = "<group>"; };
-		914F466816AC3E2700786D52 /* CircleApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleApp.h; sourceTree = "<group>"; };
-		914F466916AC3E2700786D52 /* CircleApp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CircleApp.mm; sourceTree = "<group>"; };
-		914F466A16AC3E2700786D52 /* CircleAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleAppViewController.h; sourceTree = "<group>"; };
-		914F466B16AC3E2700786D52 /* CircleAppViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CircleAppViewController.mm; sourceTree = "<group>"; };
+		914F466816AC3E2700786D52 /* ExampleOFApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleOFApp.h; sourceTree = "<group>"; };
+		914F466916AC3E2700786D52 /* ExampleOFApp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ExampleOFApp.mm; sourceTree = "<group>"; };
+		914F466A16AC3E2700786D52 /* ExampleOFAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleOFAppViewController.h; sourceTree = "<group>"; };
+		914F466B16AC3E2700786D52 /* ExampleOFAppViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ExampleOFAppViewController.mm; sourceTree = "<group>"; };
+		914F467616AC3FA900786D52 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = SOURCE_ROOT; };
+		914F467816AC417600786D52 /* LaunchAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchAppViewController.h; sourceTree = "<group>"; };
+		914F467916AC417600786D52 /* LaunchAppViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LaunchAppViewController.mm; sourceTree = "<group>"; };
 		BB16EBD10F2B2A9500518274 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BB16EBD80F2B2AB500518274 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BB24DDC910DA781C00E9C588 /* ofxiphone-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ofxiphone-Info.plist"; sourceTree = "<group>"; };
@@ -191,10 +193,11 @@
 			isa = PBXGroup;
 			children = (
 				E4D8936B11527B74007E1F53 /* main.mm */,
+				914F467616AC3FA900786D52 /* Storyboard.storyboard */,
 				914F466216AC3E1C00786D52 /* AppDelegate.h */,
 				914F466316AC3E1C00786D52 /* AppDelegate.mm */,
-				914F466416AC3E1C00786D52 /* ExampleViewController.h */,
-				914F466516AC3E1C00786D52 /* ExampleViewController.mm */,
+				914F467816AC417600786D52 /* LaunchAppViewController.h */,
+				914F467916AC417600786D52 /* LaunchAppViewController.mm */,
 				d1cfea8461b96256b1b8c57d5973712c /* openFrameworks Apps */,
 			);
 			path = src;
@@ -203,10 +206,10 @@
 		d1cfea8461b96256b1b8c57d5973712c /* openFrameworks Apps */ = {
 			isa = PBXGroup;
 			children = (
-				914F466816AC3E2700786D52 /* CircleApp.h */,
-				914F466916AC3E2700786D52 /* CircleApp.mm */,
-				914F466A16AC3E2700786D52 /* CircleAppViewController.h */,
-				914F466B16AC3E2700786D52 /* CircleAppViewController.mm */,
+				914F466816AC3E2700786D52 /* ExampleOFApp.h */,
+				914F466916AC3E2700786D52 /* ExampleOFApp.mm */,
+				914F466A16AC3E2700786D52 /* ExampleOFAppViewController.h */,
+				914F466B16AC3E2700786D52 /* ExampleOFAppViewController.mm */,
 			);
 			name = "openFrameworks Apps";
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				BB24DDCA10DA781C00E9C588 /* ofxiphone-Info.plist in Resources */,
 				E41D3ED713B38FB500A75A5D /* Project.xcconfig in Resources */,
 				E41D3EE613B3906D00A75A5D /* CoreOF.xcconfig in Resources */,
+				914F467716AC3FA900786D52 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,9 +327,9 @@
 			files = (
 				E4D8936E11527B74007E1F53 /* main.mm in Sources */,
 				914F466616AC3E1C00786D52 /* AppDelegate.mm in Sources */,
-				914F466716AC3E1C00786D52 /* ExampleViewController.mm in Sources */,
-				914F466C16AC3E2700786D52 /* CircleApp.mm in Sources */,
-				914F466D16AC3E2700786D52 /* CircleAppViewController.mm in Sources */,
+				914F466C16AC3E2700786D52 /* ExampleOFApp.mm in Sources */,
+				914F466D16AC3E2700786D52 /* ExampleOFAppViewController.mm in Sources */,
+				914F467A16AC417600786D52 /* LaunchAppViewController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +351,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iPhone_Prefix.pch;
 				INFOPLIST_FILE = "ofxiphone-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = InLimbo;
 				VALID_ARCHS = "armv6 armv7";
 			};
@@ -358,6 +363,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iPhone_Prefix.pch;
 				INFOPLIST_FILE = "ofxiphone-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = InLimbo;
 				VALID_ARCHS = "armv6 armv7";
 			};

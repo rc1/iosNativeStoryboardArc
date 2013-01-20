@@ -1,12 +1,7 @@
-//
-//  CustomAppViewController.m
-//  Created by lukasz karluk on 8/02/12.
-//
-
-#import "CircleAppViewController.h"
+#import "ExampleOFAppViewController.h"
 #import "ofxiPhoneExtras.h"
 
-@implementation CircleAppViewController
+@implementation ExampleOFAppViewController
 
 - (id) initWithFrame:(CGRect)frame app:(ofxiPhoneApp *)app {
 

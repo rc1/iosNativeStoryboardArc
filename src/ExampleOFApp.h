@@ -4,12 +4,12 @@
 #include "ofxiPhone.h"
 #include "ofxiPhoneExtras.h"
 
-class CircleApp : public ofxiPhoneApp {
+class ExampleOFApp : public ofxiPhoneApp {
 	
 public:
     
-     CircleApp ();
-    ~CircleApp ();
+    ExampleOFApp();
+    virtual ~ExampleOFApp();
     
 	void setup();
 	void update();
@@ -26,8 +26,6 @@ public:
 	void gotFocus();
 	void gotMemoryWarning();
 	void deviceOrientationChanged(int newOrientation);
-    
-    ofTrueTypeFont font;
 
 };
 
